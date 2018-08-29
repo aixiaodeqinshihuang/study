@@ -1,0 +1,11 @@
+今天第一天开始学习python：
+  1.安装python编辑器sublime_3，python网址为：https://www.python.org/，sunlime_3网址为：https://www.sublimetext.com/3
+  2.安装python时项目尽量选择2.7版本，自己学习都可以，在安装2.7版本时需要勾选 Add python.exe to path，然后cmd输入python出现版本号就为安装成功。
+  3.书写第一份代码：
+    import requests
+    res = requests.get("http://www.baidu.com")
+    savefile = open("111.html","w")
+    savefile.write(res.content)
+    savefile.close()
+  4.第一次运行会出错“ImportError: No module named requests”，在cmd下进入安装python的路径下输入“pip Install requests”等待安装完成；
+  5.在sublime内运行代码便会在桌面生成一个111.html文件，html文件就是访问链接所得到的内容。
