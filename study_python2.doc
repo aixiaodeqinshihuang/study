@@ -1,0 +1,32 @@
+今天是学习python的第二天：
+一、学习了python的一些简单的语法：
+  1.python中不需要定义变量，直接使用就可以，如：a = 10；
+  2.python中不需要分号作为结束符；
+  3.python中的循环是通过“[:]”来进行实现上限与下限的，前面是上限，后面是下限；
+  4.通过def来进行函数的命名，函数后与循环之后必须有“:”来进行开始，函数体为TAB后或者四个空格为基准；
+  5.对str()函数与repr()函数进行了了解，str()函数是面向用户，repr()面向的是程序员，只知大概，后续还需重新理解；
+  6.raw_input()相当于C中的scanf();
+  7.输出时使用print "%s"或者 print "%d";
+  8.and为与，or为或，not为非。
+ 二、对sublime添加key值：
+  热键F5为编译，F8为调试，具体操作为：
+  在路径：Preferences->Key Bindings 
+输入如下代码：
+[
+    {
+    "keys": ["f5"],
+    "caption": "SublimeREPL: Python - RUN current file",
+    "command": "run_existing_window_command",
+    "args": {
+        "id": "repl_python_run",
+        "file": "config/Python/Main.sublime-menu"}
+    },
+    {
+    "keys": ["f8"],
+    "caption": "SublimeREPL: Python - PDB current file",
+    "command": "run_existing_window_command",
+    "args": {
+        "id": "repl_python_pdb",
+        "file": "config/Python/Main.sublime-menu"}
+    },   
+]
