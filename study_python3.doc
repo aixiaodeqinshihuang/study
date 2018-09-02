@@ -1,0 +1,54 @@
+1.list像C语言的二维数组，形式为listx = ["**","**",...,],str像是一个字符串或者一维数组，其中str与list可以相互转化：
+    a = "hello,world"
+    print a.split(",")  #“ ”里面为分隔符 如split()内为空，则显示就是见到任何分割符号，就用其分割了：
+                        #                                       s = "I am, writing\npython\tbook on line"                                                         #                                       print s.split()
+                        #                                       ==>['I', 'am,', 'writing', 'python', 'book', 'on', 'line']
+    ==>['hello', 'world']
+    **********************************************************
+    a = ["hello","world"]
+    print ",".join(a)  #双引号里面的为两个字符串之间的连接符
+    ==>hello,world
+    *********************************************************************
+    已经学习的list的接口：
+      list.append(x)    #给list后追加
+      List.extend(x)    #合并list
+      list.index(x)     #元素中的位置
+      list.insert(x)    #向list插入x
+      list.remove(x)    #删除某一元素，存在删除，不存在报错，可以使用“xx” in list判断是否存在xx
+      List.pop(i)       #删除某一元素，存在删除，不存在报错
+2.range()函数：range(start，end，间隙)；其中start与间隙可有可无，若start无默认为0，间隙若无默认为1；
+3.for 循环为 for i in xx：其中xx可以是字符串也可以是range（）；
+4.enumerate()函数：可搭配for循环来看
+      week = ["sunday","monday","tuesday"]
+      for (i,day) in enumerate(week):
+	      print day + " is " + str(i)   #此处的i需为str类型
+      ==> sunday is 0
+          monday is 1
+          tuesday is 2
+      **********************************************
+      week = ["sunday","monday","tuesday"]
+      print list(enumerate(week))
+      ==>[(0, 'sunday'), (1, 'monday'), (2, 'tuesday')]
+      #若print没有list，则输出的为：<enumerate object at 0x000000000302D438>
+ 5.dict的了解（一）：python中的dict具有如下特点：
+                        dict是可变的
+                        dict可以存储任意数量的Python对象
+                        dict可以存储任何python数据类型
+                        dict以：key:value，即“键：值”对的形式存储数据，每个键是唯一的。
+                        dict也被称为关联数组或哈希表。
+        创建方法为：mydict = {}
+        代码：
+            mydir = {"name":"zhangqin","age":"24","sex":"man"}
+            print mydir["name"]
+            print mydir["age"]
+            print mydir["sex"]
+            ==> zhangqin
+                24
+                man
+           ***************************************************************
+           mydict = {}
+           mydict["name"] = "zhangqin"
+           mydict[1] = 24
+           print mydict
+           ==>{1: 24, 'name': 'zhangqin'}
+           
