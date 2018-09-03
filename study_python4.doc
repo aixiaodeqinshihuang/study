@@ -3,3 +3,4 @@
 3.对str的后的函数进行了总结：
     mstr.find(str,start,end);
     mstr.isalnum();   #mstr若有字符并且只有数字或字符，则为True，否则为False
+    mstr.split();      #进行str与list之间的转换
