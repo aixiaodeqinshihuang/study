@@ -1,0 +1,5 @@
+1.dirc是python最主要的东西，****学好；
+2.list、dirc、tuple为python的主要;
+3.对str的后的函数进行了总结：
+    mstr.find(str,start,end);
+    mstr.isalnum();   #mstr若有字符并且只有数字或字符，则为True，否则为False
