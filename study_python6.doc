@@ -1,0 +1,43 @@
+1.全局变量与局部变量：
+    def func()：
+      i = 5
+      print i
+    i = 10
+    print i
+    func()
+      ===>10    5 
+   ************************************
+    def func()：
+      //global i
+      print i
+      i = 5
+      print i
+    i = 10
+    func()
+    报错，i undefine #在一个函数中有局部变量则全局变量不被使用，如果使用则需要用 global，如双斜杠后面的
+2.可通过func.__doc__打印函数内为print的字符串
+    def func():
+      "123123132"
+    func()
+    print func.__doc__
+    ==>123123132
+3.可通过import sys的方式来得到argv的参数
+    import sys
+    def func():
+	    print "123:"
+	    for i in sys.argv:
+		    print i
+    func()
+    print "over"
+    #该方法可在linux下运行，可以再dos下新建一个xx.py文件，然后运行后加上一些参数：python xx.py 123
+    ==>123: 1 2 3 over
+4.import与form...import...的区别：
+    import是直接使用一个py文件，类似于include
+    from...import...是直接从某个py文件内使用函数，然后在该py文件内直接使用；
+    如：
+    某xx.py文件内有func()函数
+    import xx
+    xx.func()
+    *****************************
+    form xx import func
+    func()
