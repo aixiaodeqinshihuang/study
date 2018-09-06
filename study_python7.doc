@@ -1,0 +1,19 @@
+1.自己写的python脚本可以通过import来进行使用，但是若是数字的则需要通过importlib来进行：
+    import importlib
+    xx = importlib.import_module(“$(num_pyname)”)
+2.
+      lista = [1,2,3,4]
+      listb = lista       #importing
+      del listb[0]
+      print "list a = %s list b = %s" %(lista , listb)
+      print "list a = %d list b = %d" %(id(lista) , id(listb))
+      listb = lista[:]    #importing
+      del listb[0]
+      print "list a = %s list b = %s" %(lista , listb)
+      print "list a = %d list b = %d" %(id(lista) , id(listb))
+      
+      =======>
+        list a = [2, 3, 4] list b = [2, 3, 4]
+        list a = 38150216 list b = 38150216
+        list a = [2, 3, 4] list b = [3, 4]
+        list a = 38150216 list b = 38267848
