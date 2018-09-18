@@ -1,0 +1,73 @@
+html总共有一下几点学习：
+
+1.html的标准格式；
+2.内容写在<body></body>里面；
+3.标题写在<h1></h1><h2></h2>......<h6></h6>
+4.段落是<p></p>
+5.字符实体	        空格	&nbsp;	&#160;
+                <	小于号	&lt;	&#60;
+                >	大于号	&gt;	&#62;
+                &	和号	&amp;	&#38;
+                "	引号	&quot;	&#34;
+                '	撇号 	&apos; (IE不支持)	&#39;
+                ￠	分（cent）	&cent;	&#162;
+                £	镑（pound）	&pound;	&#163;
+                ¥	元（yen）	&yen;	&#165;
+                €	欧元（euro）	&euro;	&#8364;
+                §	小节	&sect;	&#167;
+                ©	版权（copyright）	&copy;	&#169;
+                ®	注册商标	&reg;	&#174;
+                ™	商标	&trade;	&#8482;
+                ×	乘号	&times;	&#215;
+                ÷	除号	&divide;	&#247;
+                
+6.图片链接是<img src = "" />
+7.<a href = ""  >、target与title刷新；
+8.列表为有序列表（ol）或者无序列表（ul），后续为<li>；
+9.表格为<table></ table>:
+        <table border="1">
+          <tr>
+            <th>姓名 </th>
+            <th>性别 </th>
+            <th>年龄 </th>
+          </tr>
+          <tr>
+            <td>张秦</td>
+            <td>男</td>
+            <td>25</td>
+          </tr>
+        </table>
+10.表单为<form></form>:
+        <form action="http://www.baidu.com" method="get">
+          <p>
+            <label>姓名：</label><input type="text" name="username" />
+          </p>
+          <p>
+            <label>密码：</label><input type="password" name="password" />
+          </p>
+          <p>
+            <label>性别：</label>
+              <input type="radio" name="sex" value="0" />男
+              <input type="radio" name="sex" value="1" />女
+          </p>
+          <p>
+            <lable>爱好：</label>
+            <input type="checkbox" name="favor" value="sing" />唱歌
+            <input type="checkbox" name="favor" value="swimming" /> 游泳
+            <input type="checkbox" name="favor" value="read" />看书
+          </p>
+          <p>
+            <lable>住址：</lable>
+            <select name="site">
+              <option value="0"> 陕西 </option>
+              <option value="1"> 河南 </option>
+              <option value="2"> 山西 </option>
+            </select>
+            <select name="site"> 
+              <option value="0"> 西安</option>
+              <option value="1"> 郑州</option>
+              <option value="1"> 太原</option>
+            </select>
+          </p>
+        </form>
+  11.内嵌式为iframe;
