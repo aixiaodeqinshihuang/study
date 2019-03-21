@@ -4,7 +4,7 @@
   3.书写第一份代码：
     import requests
     res = requests.get("http://www.baidu.com")
-    savefile = open("111.html","w")
+    savefile = open("111.html","wb")
     savefile.write(res.content)
     savefile.close()
   4.第一次运行会出错“ImportError: No module named requests”，在cmd下进入安装python的路径下输入“pip Install requests”等待安装完成；
